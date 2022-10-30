@@ -12,10 +12,13 @@ node-js-app -назва node.js застосунку
 docker run -d -p 8098:80 --memory="400m" --cpus="1" --name app node-js-app
 
 зовнішній порт - 8098
+
 назва контейнеру - app
 
 3)Пушіння в публічний репозиторій
 
 docker login
+
 docker tag node-js-app yuliia1999/app
+
 docker push yuliia1999/app
